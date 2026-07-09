@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login_title">PlainText</string>
+    <string name="quote">\"The most secure password manager\"</string>
+    <string name="author">Bob and Alice</string>
+    <string name="form_instruction">Digite suas credenciais para continuar</string>
+    <string name="label_login">Login:</string>
+    <string name="label_senha">Senha:</string>
+    <string name="checkbox_save_login">Salvar informação de login</string>
+    <string name="button_entrar">ENTRAR</string>
+    <string name="addTitle">Senha</string>
+    <string name="hintName">Nome</string>
+    <string name="hintLogin">Login</string>
+    <string name="hintPassword">Senha</string>
+    <string name="hintNotes">Notas</string>
+    <string name="buttonSave">SALVAR</string>
+</resources>

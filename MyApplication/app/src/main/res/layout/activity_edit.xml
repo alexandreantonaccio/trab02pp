@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#8BC34A"
+        android:gravity="left|center_vertical"
+        android:paddingStart="20dp"
+        android:text="@string/addTitle"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageName"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
+        app:srcCompat="@drawable/ic_add_name" />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/hintName"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@id/imageName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageName"
+        app:layout_constraintTop_toTopOf="@id/imageName" />
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageName"
+        app:srcCompat="@drawable/ic_add_name" />
+
+    <EditText
+        android:id="@+id/addLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/hintLogin"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@id/imageLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageLogin"
+        app:layout_constraintTop_toTopOf="@id/imageLogin" />
+
+    <ImageView
+        android:id="@+id/imagePassword"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLogin"
+        app:srcCompat="@drawable/ic_add_key" />
+
+    <EditText
+        android:id="@+id/addPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/hintPassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@id/imagePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imagePassword"
+        app:layout_constraintTop_toTopOf="@id/imagePassword" />
+
+    <ImageView
+        android:id="@+id/imageNotes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagePassword"
+        app:srcCompat="@drawable/ic_add_notes" />
+
+    <EditText
+        android:id="@+id/addNotes"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start|top"
+        android:hint="@string/hintNotes"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageNotes"
+        app:layout_constraintTop_toBottomOf="@id/addPassword" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#37474F"
+        android:text="@string/buttonSave"
+        android:textColor="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addNotes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
